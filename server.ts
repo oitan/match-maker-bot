@@ -1,4 +1,4 @@
-import { serve } from "https://deno.land/std@0.154.0/http/server.ts";
+import { serve } from "./deps.deno.ts";
 import { bot } from "./app/bot.ts";
 import { webhookCallback } from "./deps.deno.ts";
 

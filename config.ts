@@ -1,4 +1,4 @@
-import { load } from "https://deno.land/std/dotenv/mod.ts";
+import { load } from "./deps.deno.ts";
 
 await load({ export: true });
 export default {

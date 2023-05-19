@@ -1,6 +1,6 @@
 import { load } from "https://deno.land/std/dotenv/mod.ts";
 
-const env = await load();
+await load({ export: true });
 export default {
-  bot: { token: env["BOT_TOKEN"] },
+  bot: { token: Deno.env.get("BOT_TOKEN") ?? "" },
 };
